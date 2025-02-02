@@ -19,16 +19,16 @@
 
     
   </head>
-  <body class="container mx-auto max-w-6xl">
+  <body class="container mx-auto max-w-6xl px-4">
     <header class="fixed top-0 left-0 right-0 bg-white py-4 z-50 shadow shadow-gray-100">
     <div class="container mx-auto max-w-6xl px-4">
         <div class="flex items-center justify-between">
             <h1 class="font-bold">
-                <a href="http://localhost:1313/" class="text-blue-500 text-2xl leading-1.5 font-bold tracking-tight">
+                <a href="http://localhost:1313/" class="text-[#387ed1] text-2xl leading-1.5 font-bold tracking-tight">
                     Kacha
                 </a>
             </h1>
-            <nav class="space-x-6">
+            <nav class="hidden space-x-4 md:space-x-10 md:block">
                 
                     <a href="/" class="link">
                         Home
@@ -47,20 +47,45 @@
     </div>
 </header>
 
-    
-<h2>Welcome</h2>
-<p>Check out the latest posts:</p>
-<ul>
-    
-    <li>
-        <a href="/projects/new/">New</a> - Feb 2, 2025
-    </li>
-    
-    <li>
-        <a href="/posts/my-first-post/">My First Post</a> - Feb 2, 2025
-    </li>
-    
-</ul>
+    <div class="mt-[10vh]">
+      
+    <div class="mt-[20vh] flex flex-col space-y-10">
+        <h1 class="text-6xl font-bold text-gray-800 tracking-tight">Hello, I am Vishal Kacha</h1>
+        <p class="text-2xl text-gray-600">
+            A software developer who loves to build things. I am a full-stack developer with a passion for building in startups.
+        </p>
 
+        <div class="space-y-8">
+            <div>
+            <h2 class="text-3xl font-semibold text-gray-800 mb-4">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <article class="border border-gray-200 p-6 rounded-lg hover:shadow-lg transition-shadow">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">New</h3>
+                    <p class="text-gray-600 text-sm mb-3">February 2, 2025</p>
+                    <div class="text-gray-700 prose"></div>
+                    <a href="http://localhost:1313/projects/new/" class="inline-block mt-4 text-blue-600 hover:text-blue-800">Read more →</a>
+                </article>
+                
+            </div>
+            </div>
+
+            <div>
+            <h2 class="text-3xl font-semibold text-gray-800 mb-4">Blog Posts</h2>
+            <div class="grid grid-cols-1 gap-6">
+                
+                <article class="border border-gray-200 p-6 rounded-lg hover:shadow-lg transition-shadow">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">My First Post</h3>
+                    <p class="text-gray-600 text-sm mb-3">February 2, 2025</p>
+                    <div class="text-gray-700 prose"><p>Hello, this is my first post without a theme!</p></div>
+                    <a href="http://localhost:1313/posts/my-first-post/" class="inline-block mt-4 text-blue-600 hover:text-blue-800">Read more →</a>
+                </article>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
   </body>
 </html>

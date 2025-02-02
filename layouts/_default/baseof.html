@@ -29,8 +29,10 @@
 
     {{ $t.Stop }}
   </head>
-  <body class="container mx-auto max-w-6xl">
+  <body class="container mx-auto max-w-6xl px-4">
     {{ partial "header" . }}
-    {{ block "main" . }}{{ end }}
+    <div class="mt-[10vh]">
+      {{ block "main" . }}{{ end }}
+    </div>
   </body>
 </html>
