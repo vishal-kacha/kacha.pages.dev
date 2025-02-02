@@ -1,0 +1,26 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Vishal Kacha | Software Developer'
+
+[outputs]
+    home = ["html"]
+
+[[build.cachebusters]]
+    source = 'layouts/.*'
+    target = 'css'
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 3

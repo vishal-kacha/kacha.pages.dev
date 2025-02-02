@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      {{ .Title }}
+    </title>
+    <meta name="description" content="{{ .Description }}" />
+    {{ $t := debug.Timer "tailwindcss" }}
+    {{ with resources.Get "/css/styles.css" }}
+      {{ $opts := dict
+        "inlineImports" true
+        "optimize" (not hugo.IsDevelopment)
+      }}
+      {{ with . | css.TailwindCSS $opts }}
+        {{ if hugo.IsDevelopment }}
+          <link rel="stylesheet" href="{{ .RelPermalink }}" />
+        {{ else }}
+          {{ with . | minify | fingerprint }}
+            <link
+              rel="stylesheet"
+              href="{{ .RelPermalink }}"
+              integrity="{{ .Data.Integrity }}"
+              crossorigin="anonymous" />
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    {{ $t.Stop }}
+  </head>
+  <body class="container mx-auto max-w-6xl">
+    {{ partial "header" . }}
+    {{ block "main" . }}{{ end }}
+  </body>
+</html>

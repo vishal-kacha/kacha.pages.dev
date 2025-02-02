@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/inter.woff2") format("woff2"),
+    url("/fonts/inter.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  @apply bg-white text-gray-900;
+}
+
+.link {
+  @apply text-gray-600 hover:text-blue-500 transition-colors;
+}

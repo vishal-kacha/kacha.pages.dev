@@ -1,0 +1,11 @@
+{{ define "main" }}
+<h2>Welcome</h2>
+<p>Check out the latest posts:</p>
+<ul>
+    {{ range .Site.RegularPages }}
+    <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a> - {{ .Date.Format "Jan 2, 2006" }}
+    </li>
+    {{ end }}
+</ul>
+{{ end }}
