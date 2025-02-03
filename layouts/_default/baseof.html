@@ -29,7 +29,27 @@
 
     {{ $t.Stop }}
   </head>
-  <body class="container mx-auto max-w-6xl px-4">
+  <body class="relative container mx-auto max-w-6xl px-4">
+    <!-- Border container -->
+    <div class="fixed top-0 left-1/2 w-full max-w-7xl -translate-x-1/2 h-full pointer-events-none">
+      <!-- Left borders -->
+      <div class="absolute left-6 top-0 bottom-0 flex space-x-14">
+        <div class="w-px h-full bg-gray-100"></div>
+        <div class="w-px h-full bg-gray-100"></div>
+      </div>
+
+      <!-- Right borders -->
+      <div class="absolute right-6 top-0 bottom-0 flex space-x-14">
+        <div class="w-px h-full bg-gray-100"></div>
+        <div class="w-px h-full bg-gray-100"></div>
+      </div>
+
+      <!-- Textured pattern for left border gap -->
+      <div class="absolute left-6 top-0 bottom-0 w-14 opacity-[0.04]" style="background-image: repeating-linear-gradient(45deg, #000 0, #000 1px, transparent 0, transparent 8px);"></div>
+      <!-- Textured pattern for right border gap -->
+      <div class="absolute right-6 top-0 bottom-0 w-14 opacity-[0.04]" style="background-image: repeating-linear-gradient(45deg, #000 0, #000 1px, transparent 0, transparent 8px);"></div>
+    </div>
+  
     {{ partial "header" . }}
     <div class="mt-[10vh]">
       {{ block "main" . }}{{ end }}
