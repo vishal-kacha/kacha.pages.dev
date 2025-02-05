@@ -24,3 +24,17 @@ title = 'Vishal Kacha | Software Developer'
     name = "Blog"
     url = "/posts/"
     weight = 3
+
+[sitemap]
+  changeFreq = ''
+  disable = false
+  filename = 'sitemap.xml'
+  priority = -1
+
+
+
+[pagination]
+  disableAliases = false
+  pagerSize = 10
+  path = 'page'
+

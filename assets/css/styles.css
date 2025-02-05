@@ -16,3 +16,11 @@ body {
 .link {
   @apply text-gray-600 hover:text-[#387ed1] transition-colors;
 }
+
+h2 {
+  @apply text-2xl font-semibold text-gray-800;
+}
+
+h3 {
+  @apply text-xl font-semibold text-gray-800;
+}
