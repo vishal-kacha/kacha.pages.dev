@@ -554,9 +554,6 @@
   .left-1\/2 {
     left: calc(1/2 * 100%);
   }
-  .left-2 {
-    left: calc(var(--spacing) * 2);
-  }
   .left-6 {
     left: calc(var(--spacing) * 6);
   }
@@ -936,20 +933,6 @@
       }
     }
   }
-  .sm\:space-x-8 {
-    @media (width >= 40rem) {
-      :where(& > :not(:last-child)) {
-        --tw-space-x-reverse: 0;
-        margin-inline-start: calc(calc(var(--spacing) * 8) * var(--tw-space-x-reverse));
-        margin-inline-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-x-reverse)));
-      }
-    }
-  }
-  .md\:left-4 {
-    @media (width >= 48rem) {
-      left: calc(var(--spacing) * 4);
-    }
-  }
   .md\:block {
     @media (width >= 48rem) {
       display: block;
@@ -966,20 +949,6 @@
         --tw-space-x-reverse: 0;
         margin-inline-start: calc(calc(var(--spacing) * 10) * var(--tw-space-x-reverse));
         margin-inline-end: calc(calc(var(--spacing) * 10) * calc(1 - var(--tw-space-x-reverse)));
-      }
-    }
-  }
-  .lg\:left-6 {
-    @media (width >= 64rem) {
-      left: calc(var(--spacing) * 6);
-    }
-  }
-  .lg\:space-x-14 {
-    @media (width >= 64rem) {
-      :where(& > :not(:last-child)) {
-        --tw-space-x-reverse: 0;
-        margin-inline-start: calc(calc(var(--spacing) * 14) * var(--tw-space-x-reverse));
-        margin-inline-end: calc(calc(var(--spacing) * 14) * calc(1 - var(--tw-space-x-reverse)));
       }
     }
   }
