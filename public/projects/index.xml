@@ -2,32 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Vishal Kacha | Software Developer</title>
-    <link>http://localhost:1313/projects/</link>
+    <link>//localhost:1313/projects/</link>
     <description>Recent content in Projects on Vishal Kacha | Software Developer</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Feb 2024 23:40:26 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>New Project</title>
-      <link>http://localhost:1313/projects/new-copy-2/</link>
-      <pubDate>Fri, 02 Feb 2024 23:40:26 +0530</pubDate>
-      <guid>http://localhost:1313/projects/new-copy-2/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quibusdam alias illum unde! Dolores, cum, eum deserunt nemo tempore sint doloribus earum maxime omnis velit at, magni officia inventore ipsum.&#xA;Saepe beatae neque accusamus veritatis id, dolor quaerat doloribus sapiente corporis tenetur vero. Dolores quo praesentium assumenda illum, amet consequatur omnis perspiciatis. Amet eaque exercitationem placeat, iure nesciunt cumque quia!&#xA;Excepturi, corporis. Sunt sint dignissimos similique accusantium aperiam veritatis optio deleniti quam molestias illum aliquam, veniam facilis asperiores minima blanditiis sequi quas repellendus, officia maiores? Corporis quia error minus ea.&#xA;Obcaecati quisquam dolor iste voluptate, numquam non beatae magnam hic suscipit quod. Sunt cumque id, quo laboriosam quidem omnis dignissimos ad saepe nostrum dolores, totam possimus minus quibusdam tenetur facilis?&#xA;Quae optio dolore, quasi enim magnam libero, sed consectetur molestiae facere explicabo exercitationem porro, suscipit tempora saepe mollitia repellendus est. Hic corrupti dignissimos debitis aperiam quisquam vero ut itaque incidunt.&#xA;Sapiente molestias accusamus quae iure eum vero explicabo dicta, maxime adipisci eaque in repellat amet sed soluta eligendi dolore, illum eveniet architecto autem corrupti. Voluptates soluta cum sit&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>New Project</title>
-      <link>http://localhost:1313/projects/new-copy/</link>
-      <pubDate>Fri, 02 Feb 2024 23:40:26 +0530</pubDate>
-      <guid>http://localhost:1313/projects/new-copy/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quibusdam alias illum unde! Dolores, cum, eum deserunt nemo tempore sint doloribus earum maxime omnis velit at, magni officia inventore ipsum.&#xA;Saepe beatae neque accusamus veritatis id, dolor quaerat doloribus sapiente corporis tenetur vero. Dolores quo praesentium assumenda illum, amet consequatur omnis perspiciatis. Amet eaque exercitationem placeat, iure nesciunt cumque quia!&#xA;Excepturi, corporis. Sunt sint dignissimos similique accusantium aperiam veritatis optio deleniti quam molestias illum aliquam, veniam facilis asperiores minima blanditiis sequi quas repellendus, officia maiores? Corporis quia error minus ea.&#xA;Obcaecati quisquam dolor iste voluptate, numquam non beatae magnam hic suscipit quod. Sunt cumque id, quo laboriosam quidem omnis dignissimos ad saepe nostrum dolores, totam possimus minus quibusdam tenetur facilis?&#xA;Quae optio dolore, quasi enim magnam libero, sed consectetur molestiae facere explicabo exercitationem porro, suscipit tempora saepe mollitia repellendus est. Hic corrupti dignissimos debitis aperiam quisquam vero ut itaque incidunt.&#xA;Sapiente molestias accusamus quae iure eum vero explicabo dicta, maxime adipisci eaque in repellat amet sed soluta eligendi dolore, illum eveniet architecto autem corrupti. Voluptates soluta cum sit&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>New Project</title>
-      <link>http://localhost:1313/projects/new/</link>
-      <pubDate>Fri, 02 Feb 2024 23:40:26 +0530</pubDate>
-      <guid>http://localhost:1313/projects/new/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quibusdam alias illum unde! Dolores, cum, eum deserunt nemo tempore sint doloribus earum maxime omnis velit at, magni officia inventore ipsum.&#xA;Saepe beatae neque accusamus veritatis id, dolor quaerat doloribus sapiente corporis tenetur vero. Dolores quo praesentium assumenda illum, amet consequatur omnis perspiciatis. Amet eaque exercitationem placeat, iure nesciunt cumque quia!&#xA;Excepturi, corporis. Sunt sint dignissimos similique accusantium aperiam veritatis optio deleniti quam molestias illum aliquam, veniam facilis asperiores minima blanditiis sequi quas repellendus, officia maiores? Corporis quia error minus ea.&#xA;Obcaecati quisquam dolor iste voluptate, numquam non beatae magnam hic suscipit quod. Sunt cumque id, quo laboriosam quidem omnis dignissimos ad saepe nostrum dolores, totam possimus minus quibusdam tenetur facilis?&#xA;Quae optio dolore, quasi enim magnam libero, sed consectetur molestiae facere explicabo exercitationem porro, suscipit tempora saepe mollitia repellendus est. Hic corrupti dignissimos debitis aperiam quisquam vero ut itaque incidunt.&#xA;Sapiente molestias accusamus quae iure eum vero explicabo dicta, maxime adipisci eaque in repellat amet sed soluta eligendi dolore, illum eveniet architecto autem corrupti. Voluptates soluta cum sit&lt;/p&gt;</description>
-    </item>
+    <atom:link href="//localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

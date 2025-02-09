@@ -1,0 +1,20 @@
++++
+date = '2024-02-02T23:40:26+05:30'
+draft = true
+title = 'New Project'
+image = "https://images.unsplash.com/photo-1684262483735-1101bcb10f0d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
+github = "https://github.com/yourusername/project-name"
+live = "https://project-demo-url.com"
+description = "A brief description of your project"
++++
+
+## Overview
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quibusdam alias illum unde! Dolores, cum, eum deserunt nemo tempore sint doloribus earum maxime omnis velit at, magni officia inventore ipsum.
+Saepe beatae neque accusamus veritatis id, dolor quaerat doloribus sapiente corporis tenetur vero. Dolores quo praesentium assumenda illum, amet consequatur omnis perspiciatis. Amet eaque exercitationem placeat, iure nesciunt cumque quia!
+
+---
+
+```js
+console.log("hello")
+```

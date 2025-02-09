@@ -10,7 +10,7 @@
 
 body {
   font-family: "Inter", sans-serif;
-  @apply bg-white text-gray-700;
+  @apply bg-white text-gray-700 w-full;
 }
 
 .link {
@@ -18,9 +18,21 @@ body {
 }
 
 h2 {
-  @apply text-2xl font-semibold text-gray-800;
+  @apply text-2xl font-semibold text-gray-800 pb-1;
 }
 
 h3 {
-  @apply text-xl font-semibold text-gray-800;
+  @apply text-xl font-semibold text-gray-800 pb-2;
+}
+
+hr {
+  @apply border-t border-gray-200 my-6;
+}
+
+code {
+  @apply font-mono text-sm rounded py-1;
+}
+
+pre {
+  @apply font-mono text-sm rounded p-4 bg-gray-100;
 }

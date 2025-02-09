@@ -5,6 +5,7 @@
     <title>
       Posts
     </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
     
     
@@ -18,9 +19,10 @@
 
     
   </head>
-  <body class="relative container mx-auto max-w-6xl px-4">
+  <body>
+    <div  class="relative container mx-auto max-w-6xl w-full">
     
-    <div class="fixed top-0 left-1/2 w-full max-w-7xl -translate-x-1/2 h-full pointer-events-none">
+    <div class="hidden md:block fixed top-0 left-1/2 w-full max-w-7xl -translate-x-1/2 h-full pointer-events-none">
       
       <div class="absolute left-6 top-0 bottom-0 flex space-x-14">
         <div class="w-px h-full bg-gray-100"></div>
@@ -43,11 +45,18 @@
     <div class="container mx-auto max-w-6xl px-4">
         <div class="flex items-center justify-between">
             <h1 class="font-bold">
-                <a href="http://localhost:1313/" class="text-[#387ed1] text-2xl leading-1.5 font-bold tracking-tight">
+                <a href="//localhost:1313/" class="text-[#387ed1] text-2xl leading-1.5 font-bold tracking-tight">
                     Kacha
                 </a>
             </h1>
-            <nav class="hidden space-x-4 md:space-x-10 md:block">
+            
+            <button class="md:hidden" id="mobile-menu-button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            
+            <nav class="hidden md:block space-x-4 md:space-x-10">
                 
                     <a href="/" class="link">
                         Home
@@ -62,105 +71,59 @@
                     </a>
                 
             </nav>
+            
+            <nav id="mobile-menu" class="fixed inset-0 bg-white z-40 hidden pt-16">
+                
+                <button class="absolute top-4 right-4" id="mobile-menu-close">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+                <div class="container mx-auto px-4">
+                    
+                        <a href="/" class="block py-2 link">
+                            Home
+                        </a>
+                    
+                        <a href="/projects/" class="block py-2 link">
+                            Projects
+                        </a>
+                    
+                        <a href="/posts/" class="block py-2 link">
+                            Blog
+                        </a>
+                    
+                </div>
+            </nav>
         </div>
     </div>
 </header>
 
+<script>
+document.getElementById('mobile-menu-button').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+});
+
+document.getElementById('mobile-menu-close').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.add('hidden');
+});
+</script>
+
     <div class="mt-[10vh]">
       
-<div class="mt-[10vh] flex flex-col space-y-10">
+<div class="mt-[10vh] flex flex-col space-y-4">
     <div class="border-y border-gray-100 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
         <div class="max-w-6xl mx-auto px-4">
             <h1 class="text-3xl font-semibold text-gray-800 tracking-tighter">Posts</h1>
         </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-4">
-        
-        <article class="border border-gray-200 p-6 rounded-lg hover:shadow-lg transition-all duration-300 flex flex-col">
-            
-            <div class="mb-4 overflow-hidden rounded-lg">
-                <img src="https://images.unsplash.com/photo-1684262483735-1101bcb10f0d?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8" 
-                     alt="Posts" 
-                     class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
-            </div>
-            
-            <div class="flex justify-between items-start">
-                <h3 class="text-2xl font-bold text-gray-800 mb-2 hover:text-blue-600">New Project</h3>
-                <div class="flex space-x-4">
-                </div>
-            </div>
-            <p class="text-gray-600 text-sm mb-3">
-                February 2, 2024
-            </p>
-            <div class="mt-auto">
-                <a href="/posts/new-copy-2/" 
-                   class="inline-flex items-center text-blue-600 hover:text-blue-800 group">
-                    Read more 
-                    <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                    </svg>
-                </a>
-            </div>
-        </article>
-        
-        <article class="border border-gray-200 p-6 rounded-lg hover:shadow-lg transition-all duration-300 flex flex-col">
-            
-            <div class="mb-4 overflow-hidden rounded-lg">
-                <img src="https://images.unsplash.com/photo-1684262483735-1101bcb10f0d?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8" 
-                     alt="Posts" 
-                     class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
-            </div>
-            
-            <div class="flex justify-between items-start">
-                <h3 class="text-2xl font-bold text-gray-800 mb-2 hover:text-blue-600">New Project</h3>
-                <div class="flex space-x-4">
-                </div>
-            </div>
-            <p class="text-gray-600 text-sm mb-3">
-                February 2, 2024
-            </p>
-            <div class="mt-auto">
-                <a href="/posts/new-copy/" 
-                   class="inline-flex items-center text-blue-600 hover:text-blue-800 group">
-                    Read more 
-                    <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                    </svg>
-                </a>
-            </div>
-        </article>
-        
-        <article class="border border-gray-200 p-6 rounded-lg hover:shadow-lg transition-all duration-300 flex flex-col">
-            
-            <div class="mb-4 overflow-hidden rounded-lg">
-                <img src="https://images.unsplash.com/photo-1684262483735-1101bcb10f0d?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8" 
-                     alt="Posts" 
-                     class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
-            </div>
-            
-            <div class="flex justify-between items-start">
-                <h3 class="text-2xl font-bold text-gray-800 mb-2 hover:text-blue-600">New Project</h3>
-                <div class="flex space-x-4">
-                </div>
-            </div>
-            <p class="text-gray-600 text-sm mb-3">
-                February 2, 2024
-            </p>
-            <div class="mt-auto">
-                <a href="/posts/new/" 
-                   class="inline-flex items-center text-blue-600 hover:text-blue-800 group">
-                    Read more 
-                    <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                    </svg>
-                </a>
-            </div>
-        </article>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 p-4">
         
     </div>
 </div>
 
     </div>
+  </div>
   </body>
 </html>

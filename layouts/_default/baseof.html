@@ -5,6 +5,7 @@
     <title>
       {{ .Title }}
     </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="{{ .Description }}" />
     {{ $t := debug.Timer "tailwindcss" }}
     {{ with resources.Get "/css/styles.css" }}
@@ -29,9 +30,10 @@
 
     {{ $t.Stop }}
   </head>
-  <body class="relative container mx-auto max-w-6xl px-4">
+  <body>
+    <div  class="relative container mx-auto max-w-6xl w-full">
     <!-- Border container -->
-    <div class="fixed top-0 left-1/2 w-full max-w-7xl -translate-x-1/2 h-full pointer-events-none">
+    <div class="hidden md:block fixed top-0 left-1/2 w-full max-w-7xl -translate-x-1/2 h-full pointer-events-none">
       <!-- Left borders -->
       <div class="absolute left-6 top-0 bottom-0 flex space-x-14">
         <div class="w-px h-full bg-gray-100"></div>
@@ -54,5 +56,6 @@
     <div class="mt-[10vh]">
       {{ block "main" . }}{{ end }}
     </div>
+  </div>
   </body>
 </html>

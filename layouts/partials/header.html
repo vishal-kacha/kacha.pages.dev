@@ -6,13 +6,46 @@
                     Kacha
                 </a>
             </h1>
-            <nav class="hidden space-x-4 md:space-x-10 md:block">
+            <!-- Mobile menu button -->
+            <button class="md:hidden" id="mobile-menu-button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <!-- Desktop navigation -->
+            <nav class="hidden md:block space-x-4 md:space-x-10">
                 {{ range .Site.Menus.main }}
                     <a href="{{ .URL }}" class="link">
                         {{ .Name }}
                     </a>
                 {{ end }}
             </nav>
+            <!-- Mobile navigation -->
+            <nav id="mobile-menu" class="fixed inset-0 bg-white z-40 hidden pt-16">
+                <!-- Close button -->
+                <button class="absolute top-4 right-4" id="mobile-menu-close">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+                <div class="container mx-auto px-4">
+                    {{ range .Site.Menus.main }}
+                        <a href="{{ .URL }}" class="block py-2 link">
+                            {{ .Name }}
+                        </a>
+                    {{ end }}
+                </div>
+            </nav>
         </div>
     </div>
 </header>
+
+<script>
+document.getElementById('mobile-menu-button').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+});
+
+document.getElementById('mobile-menu-close').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.add('hidden');
+});
+</script>
