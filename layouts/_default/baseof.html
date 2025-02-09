@@ -7,21 +7,18 @@
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="{{ .Description }}" />
-    {{ with resources.Get "/css/styles.css" }}
-      {{ $opts := dict
-      "inlineImports" true
-      "optimize" true
-      }}
-      {{ with . | css.TailwindCSS $opts }}
-      {{ with . | minify | fingerprint }}
-        <link
-        rel="stylesheet"
-        href="{{ .RelPermalink }}"
-        integrity="{{ .Data.Integrity }}"
-        crossorigin="anonymous" />
-      {{ end }}
+    {{ with resources.Get "css/main.css" }}
+    {{ $opts := dict "minify" true }}
+    {{ with . | css.TailwindCSS $opts }}
+      {{ if hugo.IsDevelopment }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}">
+      {{ else }}
+        {{ with . | fingerprint }}
+          <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+        {{ end }}
       {{ end }}
     {{ end }}
+  {{ end }}  
   </head>
   <body>
     <div  class="relative container mx-auto max-w-6xl w-full">
